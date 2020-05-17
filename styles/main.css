@@ -2,7 +2,7 @@
 body{
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 45px auto 60px;
+    grid-template-rows: 45px auto 150px;
 }
 
 
@@ -51,10 +51,84 @@ header{
 }
 /* Main */
 main{
-    
+    background-color: gray;
 }
 
 /* Footer */
 footer{
-   
+   padding: 25px 60px;
+}
+.footer-line{
+    width: 100%;
+    border-top: 2px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    height: 1px;
+}
+.footer-main-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.footer-main-links a{
+    font-size: 12px;
+    color: rgb(86, 123, 149);
+}
+.categories{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 15px;
+}
+.categories ul:last-child{
+    border-left: 1px solid #e2e2e2;
+    padding-left: 15px;
+}
+.categories ul:last-child li{
+    font-size: 10px;
+}
+.special-ctg{
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+.divider{
+    padding: 1px 0;
+}
+.categories ul li{
+    margin: 12px 0;
+    font-size: 14px;
+}
+.categories ul hr{
+    background-color: #e2e2e2;
+    height: 1px;
+    border: none;
+}
+.category-name{
+    font-weight: bold;
+    font-size: 16px !important;
+    color: #333333;
+}
+.categories ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.category-name:hover{
+    text-decoration: none !important;
+    cursor: default !important;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 60px;
+    font-size: 10px;
+    color: #666;
+    flex-wrap: wrap;
+}
+.nav-links li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer__svg{
+    width: 12px;
+    height: 14px;
 }
