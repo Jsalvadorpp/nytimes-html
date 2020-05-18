@@ -2,7 +2,7 @@
 body{
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
 }
 /* Header */
 header{
@@ -12,7 +12,7 @@ header{
     align-items: center;
     padding: 0 20px;
     border-bottom: 1px solid #e2e2e2;
-    
+
     position: fixed;
     top: 0;
     left: 0;
@@ -44,7 +44,8 @@ header{
     text-decoration: underline;
     cursor: pointer;
 }
-.right-navbar button{
+.right-navbar button,
+.article-more button{
     color: white;
     background-color: #567b95;
     padding: 8px 12px;
@@ -53,10 +54,107 @@ header{
     font-weight: bold;
     font-size: 10px;
 }
+
+
 /* Main */
 main{
-    background-color: gray;
+    padding: 0px 180px;
+    margin-top: 35px;
 }
+main article h1,
+main article p,
+main article .video,
+main article .half-wfig,
+.article-info,
+.article-end{
+    padding: 0 200px;
+}
+article .tittle{
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+article p,
+article .video,
+main article .half-wfig{
+    margin-bottom: 15px;
+}
+article{
+    margin: 35px 0;
+}
+.full-wfig,
+.half-wfig{
+    margin-bottom: 20px;
+}
+.full-wfig img,
+.half-wfig img{
+    width: 100%;
+    object-fit: cover;
+}
+.full-wfig figcaption,
+.half-wfig figcaption,
+.video figcaption{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #666;
+}
+.full-wfig figcaption small,
+.half-wfig figcaption small,
+.video figcaption{
+    color: #888;
+}
+.article-info .details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+.article-info .author span{
+    border-bottom: 1px solid #cccccc;;
+}
+.article-info .details ul li,
+.article-more ul li{
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+article p{
+    font-size: 18px;
+}
+.fig-title{
+    color: black;
+}
+.full-wfig hr{
+    border: 0;
+    height: 1px;
+    background-color: black;
+    width: 150px;
+    margin-left: 0;
+}
+.article-end a{
+    color: inherit;
+    text-decoration: underline;
+    align-items: center;
+}
+.article-end small{
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+}
+.article-more{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.article-more button{
+    font-size: 14px;
+    padding: 10px 80px;
+}
+
 
 /* Footer */
 footer{
